@@ -61,7 +61,8 @@
         
         document.getElementById("btn").onclick=()=>{
             let city= document.getElementById("city").value;
-       fetch(`https://api.openweathermap.org/data/2.5/find?q=${city}&units=metric&appid=294a56a066bc074a5dd48780c74f6d57`).then (data=>{
+            var url = 'place your unique link here';
+       fetch(url).then (data=>{
            return data.json()
        }).then (data2=>{
         console.log(data2);
